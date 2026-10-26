@@ -1,0 +1,5 @@
+stakeholder,benefit,harm,power,participation
+Affected person,Acceso mas rapido y objetivo a evaluaciones de credito,Rechazo injustificado de credito por discriminacion o sesgo algoritmico,low,Canal formal de apelacion humana y consulta sobre razones de la decision
+Operator,Reduccion del tiempo de evaluacion y soporte en casos complejos,Dependencia excesiva del modelo o perdida de criterio analitico,medium,Sesiones de retroalimentacion periodica y capacidad de anular recomendaciones
+Institutional owner,Estandarizacion de criterios y mejor control del riesgo de mora,Riesgo reputacional y sanciones regulatorias por fallos de equidad,high,Comite trimestral de gobernanza y revision de metricas de desempeno
+Data team,Despliegue de un sistema analitico de alto impacto funcional,Carga operativa adicional por reentrenamiento y sesgos no detectados,medium,Auditorias de sesgo continuas y monitoreo de deriva de datoss

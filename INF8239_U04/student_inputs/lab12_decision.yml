@@ -1,0 +1,6 @@
+priority_harm: "Disparidad en la tasa de falsos positivos (FPR) y en la tasa de selección entre los subgrupos G1 y G2"
+primary_metric: "selection_rate"
+tolerance: 0.10
+evidence: "La auditoría con Fairlearn revela una brecha en selection_rate de 23.2% (G2: 67.8% vs G1: 44.6%) y un FPR elevado en G2 (37.5% vs 25.0%). El modelo alternative tree empeora estas disparidades y duplica el tamaño en disco."
+limitation: "El subgrupo G2 cuenta con una muestra reducida (59 registros), lo que limita la robustez estadística y genera incertidumbre en las estimaciones."
+recommendation: "Desplegar condicionalmente el modelo base (lgbm) aplicando optimización de umbrales (ThresholdOptimizer) y descartar el modelo alternative tree."

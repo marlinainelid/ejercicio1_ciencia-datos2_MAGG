@@ -1,0 +1,9 @@
+id,scenario,affected,likelihood_1_4,impact_1_4,control,owner,evidence,residual
+R01,Sesgo de disparidad en aprobacion de credito por atributos protegidos o sociodemograficos,Affected person,2,4,Auditorias de equidad de disparidad de impacto e igualacion de oportunidades,Data team,reports/lab11/fairness_audit.json,high
+R02,Deriva de datos (data drift) por cambios macroeconomicos que degradan la precision del modelo,Institutional owner,3,3,Monitoreo continuo de distribucion de datos y reentrenamiento trimestral,Data team,reports/lab11/drift_report.json,medium
+R03,Falta de explicabilidad que impida al analista justificar el rechazo de una solicitud,Operator,2,3,Integracion de explicaciones SHAP y LIME en la interfaz de evaluacion,Operator,reports/lab11/explainability_spec.md,medium
+R04,Aprobacion o rechazo completamente automatizado sin revision ni supervision humana,Affected person,1,4,Control estricto de UI que exige firma y decision explicita del analista,Operator,reports/lab11/workflow_policy.md,medium
+R05,Fuga de informacion sensible de clientes por falta de anonimizacion en registros o logs,Affected person,2,2,Implementacion de seudonimizacion y cifrado de datos en reposo y transito,Institutional owner,reports/lab11/security_audit.md,low
+R06,Incapacidad del cliente para apelar o impugnar formalmente una recomendacion negativa,Affected person,3,2,Canal formal de apelacion con revision humana independiente en 5 dias,Institutional owner,reports/lab11/appeal_process.md,medium
+R07,Sesgo de automatizacion donde el analista acepta a ciegas todas las salidas del modelo,Operator,2,4,Capacitacion obligatoria en sesgos cognitivos y auditorias de varianza de anulacion,Operator,reports/lab11/training_log.md,high
+R08,Falta de mecanismo automatico de retiro ante caida sostenida del desempeno o sesgo,Institutional owner,1,3,Script automatizado de monitoreo con interruptor de apagado (kill-switch),Data team,reports/lab11/kill_switch_spec.md,low
